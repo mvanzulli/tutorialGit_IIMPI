@@ -31,3 +31,10 @@ git config --global user.email "your@email.com"
 También es posible utilizarlo en windows a través de la aplicación con una interfaz intuitiva y de simple uso. En general esta interfaz suele ser útil para observar de una forma gráfica la interacción entre los repositorios locales y remotos. 
 
 La aplicación está disponible para windows en el siguiente link: [Descargar desktop windows 64bit](https://desktop.github.com/)
+
+## <span style="color:orange"> 3. Crear llave publica y llave privada   </span>
+Suele ser útil crear un sistema de autentifcación mediante la técnica criptográfica de llave pública y llave privada. Esto evita verificar las credenciales en cada interacción con el repositorio remoto con el usuario y la clav. 
+
+Las intstrucciones para GitHub se encuetran en el siguiente enlace: [Instrucciones llave públuca/privada ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?utm_source=Blog)
+
+Las intstrucciones para GitLab se encuetran en el siguiente enlace: [Instrucciones llave públuca/privada ](https://docs.gitlab.com/ee/ssh/)
