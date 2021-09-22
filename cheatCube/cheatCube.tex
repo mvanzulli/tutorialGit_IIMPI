@@ -1,0 +1,136 @@
+% =============================================================
+% ---  cheatCube: a cheatsheet that can be folded as a cube ---
+%
+% Copyright (C) 2019, Jorge M. Pérez Zerpa
+% Copyright (C) 2021, Mauricio Vanzulli
+% This file is part of cheatCube.
+
+% cheatCube is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+
+% cheatCube is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+
+% You should have received a copy of the GNU General Public License
+% along with cheatCube.  If not, see <https://www.gnu.org/licenses/>.
+
+% =============================================================
+
+\documentclass[10pt,a4paper]{article}
+\usepackage{tikz,verbatimbox}
+%optional libraries
+\usetikzlibrary{decorations,arrows,automata,positioning}
+\usetikzlibrary{mindmap}
+\usetikzlibrary{calc}
+\usetikzlibrary{folding}
+\usepackage{nopageno}
+\begin{document}
+
+\begin{small}
+
+% bottom
+\begin{myverbbox}{\latuno}
+
+ --- Git ---
+Clone project:
+ $ git clone {https://url}
+Check status of file changes:
+ $ git status
+Add changes to commit:
+ $ git add archivo2.txt
+ $ git add .
+Create commit:
+ $ git commit -m 
+ "Commit description"
+Upload commits:
+ $ git push
+
+\end{myverbbox}
+
+
+% lateral 1
+\begin{myverbbox}{\bot}
+ --- BASh ---
+show begining of file:
+ $ head
+show end of file:
+ $ tail
+lists files of current folder
+ $ls
+\end{myverbbox}
+% lateral 2
+\begin{myverbbox}{\latdos}
+ --- Git (II) ---
+Download changes from repo:
+ $ git fetch
+ $ git pull --all
+ $ git mv dir/oldname ...
+   dir/newname
+ $ git rm dir/nombrearchivo
+Delete folder and contents
+ $ git rm -r dirname
+\end{myverbbox}
+% lateral 3
+\begin{myverbbox}{\lattre}
+ --- Git (III) ---
+ 
+Create branch <b-name>:
+	$ git branch <b name>
+Move to another branch:
+	$ git checkout- b <b-name>
+Delete a branch
+	$ git branch -d <b-name>
+Compare branhces:
+	$ git diff branch1 branch2
+
+\end{myverbbox}
+
+% lateral 4
+\begin{myverbbox}{\latcua}
+ --- Git (IV) ---
+
+Commit history:
+$ git log
+Move to another branch:
+$ git checkout -b <branch-name>
+Delete a branch
+$ git branch -d <branch-name>
+Compare branhces:
+$ git diff branch1branch2
+
+\end{myverbbox}
+
+% top
+\begin{myverbbox}{\top}
+--- Git (V) ---
+--- Merge a new branch ---
+Move to devlop branch:
+$ git checkout develop
+Update from remote server:
+$ git pull
+Merge feature1 into devolp
+$ git merge feature1
+\end{myverbbox}
+%
+\end{small}
+%
+\noindent
+\begin{tikzpicture}
+  \path pic [
+    folding line length=50mm,
+    transform shape,
+    % numbered faces,
+    face 1 = {\node { \bot    };},
+    face 2 = {\node { \latuno };},
+    face 3 = {\node { \latdos };},
+    face 4 = {\node { \lattre };},
+    face 5 = {\node { \top    };},
+    face 6 = {\node { \latcua };}
+    ]
+    {cube folding};
+\end{tikzpicture}
+\end{document}
