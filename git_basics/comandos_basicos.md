@@ -21,7 +21,7 @@ git init
 ## <span style="color:yellow">2. Comenzar a commitear un código    </span>
 
 En git se puede considerar que existen determinados checkpoints asociados a tareas o etapas del desarrollo de código, a esto se le denominan **commits**. Estos también sirven para registrar en el pasado determinados cambios. Por ejemplo se pueden utilizar para registrar que se agregó una nueva funcionalidad, se solucionó un bug o para notificar un determinado avance.
-In Git, we can consider **commits** to be checkpoints, or snapshots of your project at its current state. In other words, we basically save the current version of our code in a commit. We can create as many commits as we need in the commit history, and we can go back and forth between commits to see the different revisions of our project code. That allows us to efficiently manage our progress and track the project as it gets developed.
+
 
 ### <span style="color:yellow">2.1 Checkear el estado del repositorio   </span>
 
