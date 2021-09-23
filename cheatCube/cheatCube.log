@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.24)  22 SEP 2021 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.24)  22 SEP 2021 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -532,14 +532,14 @@ Overfull \vbox (8.90851pt too high) has occurred while \output is active []
 Here is how much of TeX's memory you used:
  13996 strings out of 481239
  307365 string characters out of 5920377
- 537658 words of memory out of 5000000
+ 536658 words of memory out of 5000000
  29031 multiletter control sequences out of 15000+600000
  532804 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,9n,70p,446b,944s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on cheatCube.pdf (2 pages, 16843 bytes).
+Output written on cheatCube.pdf (2 pages, 16834 bytes).
 PDF statistics:
  18 PDF objects out of 1000 (max. 8388607)
  12 compressed objects within 1 object stream

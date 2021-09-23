@@ -47,7 +47,7 @@ Create commit:
  $ git commit -m 
  "Commit description"
 Upload commits:
- $ git push
+ $ git push origin branch
 
 \end{myverbbox}
 
@@ -78,12 +78,12 @@ Delete folder and contents
 \begin{myverbbox}{\lattre}
  --- Git (III) ---
  
-Create branch <b-name>:
-	$ git branch <b name>
+Create branch
+	$ git branch <b-name>
 Move to another branch:
-	$ git checkout- b <b-name>
+	$ git checkout <b-name>
 Delete a branch
-	$ git branch -d <b-name>
+	$ git branch -D <b-name>
 Compare branhces:
 	$ git diff branch1 branch2
 
@@ -96,9 +96,9 @@ Compare branhces:
 Commit history:
 $ git log
 Move to another branch:
-$ git checkout -b <branch-name>
+$ git checkout <branch-name>
 Delete a branch
-$ git branch -d <branch-name>
+$ git branch -D <branch-name>
 Compare branhces:
 $ git diff branch1branch2
 
